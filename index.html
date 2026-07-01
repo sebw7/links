@@ -3,160 +3,138 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>SEJUT BIN WASHIM</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+body{
+background:#0d0d0d;
+color:white;
+display:flex;
+justify-content:center;
+padding:30px;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+.card{
+width:100%;
+max-width:420px;
+background:#171717;
+border-radius:25px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,0,0,.4);
+}
+
+.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:3px solid white;
+}
+
+h1{
+font-size:28px;
+margin-bottom:5px;
+}
+
+p{
+opacity:.7;
+margin-bottom:20px;
+}
+
+.qr{
+width:220px;
+border-radius:18px;
+margin:20px auto;
+display:block;
+}
+
+a{
+display:block;
+margin:12px 0;
+padding:15px;
+border-radius:15px;
+background:#232323;
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+a:hover{
+background:#333;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:15px;
+background:white;
+color:black;
+font-size:17px;
+font-weight:bold;
+margin-top:18px;
+cursor:pointer;
+}
+
+.footer{
+margin-top:25px;
+font-size:13px;
+opacity:.5;
+}
+</style>
 
 </head>
 
 <body>
 
-<div class="container">
-
 <div class="card">
 
-<div class="profile">
-
-<img src="profile.jpg" class="avatar">
+<img src="profile.jpg" class="profile">
 
 <h1>SEJUT BIN WASHIM</h1>
 
-<p class="bio">
-Digital Creator
-</p>
+<p>Connect with me</p>
 
-</div>
+<img src="qr.png" class="qr">
 
-<div class="qr">
+<a href="https://www.facebook.com/share/1DSXJAJTYx/">📘 Facebook</a>
 
-<img src="qr.png">
+<a href="https://www.instagram.com/sejut.plex_">📷 Instagram</a>
 
-</div>
+<a href="https://www.tiktok.com/@sejut.bin.washim_">🎵 TikTok</a>
 
-<div class="links">
+<a href="https://www.snapchat.com/add/vromik.s7?share_id=3FFRfwN5424&locale=en-US">👻 Snapchat</a>
 
-<a href="https://www.facebook.com/share/1DSXJAJTYx/" class="link">
+<a href="https://wa.me/8801625861386">💬 WhatsApp</a>
 
-<div>
+<a href="https://t.me/sebw7">✈ Telegram</a>
 
-<h3>Facebook</h3>
-
-<p>Sejut Bin Washim</p>
-
-</div>
-
-<span>→</span>
-
-</a>
-
-<a href="https://www.instagram.com/sejut.plex_" class="link">
-
-<div>
-
-<h3>Instagram</h3>
-
-<p>@sejut.plex_</p>
-
-</div>
-
-<span>→</span>
-
-</a>
-
-<a href="https://vt.tiktok.com/ZSCmjNfLJ/" class="link">
-
-<div>
-
-<h3>TikTok</h3>
-
-<p>@sejut.bin.washim_</p>
-
-</div>
-
-<span>→</span>
-
-</a>
-
-<a href="https://www.snapchat.com/add/vromik.s7?share_id=3FFRfwN5424&locale=en-US" class="link">
-
-<div>
-
-<h3>Snapchat</h3>
-
-<p>@vromik.s7</p>
-
-</div>
-
-<span>→</span>
-
-</a>
-
-<a href="https://wa.me/8801625861386" class="link">
-
-<div>
-
-<h3>WhatsApp</h3>
-
-<p>Sebw</p>
-
-</div>
-
-<span>→</span>
-
-</a>
-
-<a href="https://t.me/sebw7" class="link">
-
-<div>
-
-<h3>Telegram</h3>
-
-<p>@sebw7</p>
-
-</div>
-
-<span>→</span>
-
-</a>
-
-</div>
-
-<div class="payment">
-
-<h2>Payment</h2>
-
-<p>01625861386</p>
-
-<div class="btns">
-
-<button id="copyBtn">
-
+<button onclick="copyNumber()">
 Copy bKash / Upay
-
 </button>
 
-<button id="shareBtn">
-
-Share Profile
-
-</button>
-
+<div class="footer">
+© SEJUT BIN WASHIM
 </div>
 
 </div>
 
-</div>
-
-</div>
-
-<script src="script.js"></script>
+<script>
+function copyNumber(){
+navigator.clipboard.writeText("01625861386");
+alert("Number Copied!");
+}
+</script>
 
 </body>
-
 </html>
